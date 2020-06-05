@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cargar un array con javascript</title>
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="array.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<!--Columna para registro de datos-->
+				<!-- Agregar columnas JJ,JG,JE,JP-->
+				<h4 class="text-center">INGRESO DE INFORMACIÓN</h4>
+				<form id="nuevo-equipo">
+					<div class="form-group">
+						<label for="equipo">Equipo</label>
+						<input type="text" id="equipo" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="puntos">Puntaje</label>
+						<input type="text" id="puntos" class="form-control">						
+					</div>
+					<div class="form-group">
+						<label for="JJ">Juego Jugados</label>
+						<input type="text" id="JJ" class="form-control">						
+					</div>
+					<div class="form-group">
+						<label for="JG">Juegos Ganados</label>
+						<input type="text" id="JG" class="form-control">						
+					</div>
+					<div class="form-group">
+						<label for="JE">Juegos Empatados</label>
+						<input type="text" id="JE" class="form-control">						
+					</div>
+					<div class="form-group">
+						<label for="JP">Juegos Perdidos</label>
+						<input type="text" id="JP" class="form-control">						
+					</div>
+					<input type="submit" value="Registrar">
+				</form>
+			</div>
+			<div class="col-lg-9">
+				<!--Columna para mostrar datos-->
+				<h4 class="text-center">CONSULTA DE INFORMACIÓN</h4>
+				<table class="table table-primary">
+					<thead class="thead-dark">
+						<tr>
+							<th>Equipos</th>
+							<th>Puntaje</th>
+							<th>JJ</th>
+							<th>JG</th>
+							<th>JE</th>
+							<th>JP</th>
+						</tr>
+					</thead>
+					<tbody id="equipos-tabla">
+						<!--- Aqui se va a cargar mi array en formato json -->
+						<!--
+						<tr>
+							<td>Mineros de Zacatecas</td>
+							<td>15</td>
+						</tr>
+						-->
+					</tbody>
+				</table>
+				<div id="tabla">					
+				</div>
+				<button id="mostrar-tabla">Cargar Registros</button>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
