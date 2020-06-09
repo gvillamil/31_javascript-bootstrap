@@ -1,8 +1,8 @@
 
 
 var tabla = [
-	{equipo:'America',puntos:15,JJ:8,JG:5,JE:2,JP:1},
-	{equipo:'Pumas',puntos:10,JJ:8,JG:5,JE:2,JP:1},
+	{equipo:'Colibries',puntos:19,JJ:8,JG:5,JE:2,JP:1},
+	{equipo:'Lagartos',puntos:18,JJ:8,JG:5,JE:2,JP:1},
 	{equipo:'Chivas',puntos:19,JJ:8,JG:5,JE:2,JP:1},
 	{equipo:'Santos',puntos:5,JJ:8,JG:5,JE:2,JP:1},
 	{equipo:'Tigeres',puntos:1,JJ:8,JG:5,JE:2,JP:1},
